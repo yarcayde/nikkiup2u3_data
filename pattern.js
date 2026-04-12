@@ -27567,19 +27567,19 @@ var pattern_e = [
 var pattern_m = pattern_m1.concat(pattern_m2);
 
 var pattern_extra=[
-  ['发型','192','织梦委托'],
-  ['下装','277','织梦委托'],
-  ['连衣裙','083','织梦委托'],
-  ['饰品','316','织梦委托'],
-  ['发型','093','织梦委托'],
-  ['鞋子','435','织梦委托'],
-  ['连衣裙','150','织梦委托'],
-  ['连衣裙','116','织梦委托'],
-  ['发型','129','织梦委托'],
+  ['Hair','192','织梦委托'],
+  ['Bottoms','277','织梦委托'],
+  ['Dress','083','织梦委托'],
+  ['Accessory','316','织梦委托'],
+  ['Hair','093','织梦委托'],
+  ['Shoes','435','织梦委托'],
+  ['Dress','150','织梦委托'],
+  ['Dress','116','织梦委托'],
+  ['Hair','129','织梦委托'],
 ];
 
 var pattern = function() {
-    var mainType = ['发型','连衣裙','外套','上装','下装','袜子','鞋子','饰品','妆容','萤光之灵'];
+    var mainType = ['Hair','Dress','Coat','Tops','Bottoms','Hosiery','Shoes','Accessory','Makeup','Spirit'];
     var ret = [];
     for (var i in pattern_m)
         ret.push([mainType[pattern_m[i][0]], numberToInventoryId(pattern_m[i][1]), mainType[pattern_m[i][2]], numberToInventoryId(pattern_m[i][3]), pattern_m[i][4].toString(), '设']);
